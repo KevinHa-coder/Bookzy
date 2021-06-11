@@ -14,7 +14,7 @@
     	stage("Deploy") {          	 
         	steps {  	 
             	sh "mvn package"
-	        sh "cp /home/labuser/jenkins/workspace/*.war ~/Downloads/apache-tomcat-10.0.6/webapps/"
+	        sh "cp /home/labsuser/jenkins/workspace/*.war ~/Downloads/apache-tomcat-10.0.6/webapps/"
        	    }
         }
     }
